@@ -5,6 +5,8 @@ const schema = require("./schema/schema");
 const cors = require("cors");
 const path = require("path");
 
+const port = process.env.PORT || 4000;
+
 const MONGO_URI =
   "mongodb+srv://sergebasangovs:calvi187439@@cluster0-lknea.mongodb.net/test?retryWrites=true&w=majority";
 const app = express();
@@ -35,6 +37,6 @@ app.use(
   })
 );
 
-app.listen(4000, () => {
-  console.log("Server listening on http://localhost:4000");
+app.listen(port, () => {
+  console.log(`Server listening on http://localhost:${port}`);
 });

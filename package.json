@@ -6,7 +6,10 @@
   "scripts": {
     "start": "nodemon app.js"
   },
-  "keywords": [],
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -17,5 +20,8 @@
     "graphql": "^15.0.0",
     "mongoose": "^5.9.13",
     "nodemon": "^2.0.3"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }
